@@ -15,7 +15,7 @@ export default function SingleGallery() {
   let { id } = useParams();
 
   const url = "  http://localhost:3000/assests/" + id;
-  const { data: assest, isPending, error } = useFetch(url);
+  const { data: assest} = useFetch(url);
 
   const skipFront = () => {
     const nextId = parseInt(id) + 1;

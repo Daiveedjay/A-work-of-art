@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Gallery() {
-  const [url, setUrl] = useState(" http://localhost:3000/assests");
+  const [url] = useState(" http://localhost:3000/assests");
   const { data } = useFetch(url);
   console.log(data);
 
@@ -61,9 +61,9 @@ export default function Gallery() {
   };
 
   const [filter, setFilter] = useState(null);
-  const handleFilter = (startYear, endYear) => {
-    setFilter({ startYear, endYear });
-  };
+  // const handleFilter = (startYear, endYear) => {
+  //   setFilter({ startYear, endYear });
+  // };
   const filteredData = data?.filter(
     (d) => !filter || (d.year >= filter.startYear && d.year <= filter.endYear)
   );
