@@ -1,0 +1,29 @@
+.utility__container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.song__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.song__controls img {
+  cursor: pointer;
+  width: 3rem;
+}
+.song--name {
+  font-size: 1.6rem;
+}
+
+.song--name span {
+  font-weight: 700;
+  margin-right: 0.25rem;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 10px per rem  */
+}
+
+body {
+  box-sizing: border-box;
+
+  font-family: "Libre Baskerville", serif;
+}
+
+.primary-text {
+  font-size: 1.6rem;
+  color: #7d7d7d;
+  transition: all ease-out 0.3s;
+  font-family: "Libre Baskerville", serif;
+}
+
+button {
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+}
+/* Under 700px */
+@media screen and (max-width: 43.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+/* Under 500px */
+
+/*   */

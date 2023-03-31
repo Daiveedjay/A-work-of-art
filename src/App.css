@@ -1,0 +1,17 @@
+body {
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+.App {
+  display: grid;
+  width: 100%;
+  font-size: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
+}

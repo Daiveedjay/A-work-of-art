@@ -1,0 +1,25 @@
+.header__nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4.5rem;
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-text {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all ease-out 0.1;
+}
+
+.header-text:hover {
+  font-weight: 700;
+  color: #000;
+}
