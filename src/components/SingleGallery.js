@@ -14,9 +14,7 @@ export default function SingleGallery() {
   const navigate = useNavigate();
   const location = useLocation();
   let { id } = useParams();
-  console.log(data.assests);
   const assest = data.assests.find((x) => x.id === +id);
-  console.log(assest);
 
   const skipFront = () => {
     const nextId = parseInt(id) + 1;
@@ -35,7 +33,6 @@ export default function SingleGallery() {
       navigate(`/assests/${prevId}`);
     }
   };
-  // console.log(assest);
 
   const containerVariants = {
     hidden: {
@@ -61,8 +58,8 @@ export default function SingleGallery() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: 0.2,
+        duration: 0.1,
+        delay: 0,
       },
     },
     exit: {

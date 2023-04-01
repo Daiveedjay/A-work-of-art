@@ -15,7 +15,7 @@ export default function Header() {
       const interval = setInterval(() => {
         setStartSlide((prevSlide) => prevSlide + 1);
         navigate(`/assests/${startSlide + 1}`);
-      }, 3000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [startSlide, isSlideshowActive, navigate]);

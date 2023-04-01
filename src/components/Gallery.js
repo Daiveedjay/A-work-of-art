@@ -9,11 +9,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Gallery() {
   const data = assests.assests;
-  // console.log(test);
-  // const [url] = useState("http://localhost:3000/assests");
-  // const { data } = useFetch(url);
-  // console.log(data);
-
   const breakpoints = {
     default: 4,
     1000: 3,
