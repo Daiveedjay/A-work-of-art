@@ -7,6 +7,7 @@ const phrases = [
   "Crafting beauty",
   "Painting history",
   "Capturing moments",
+  "Expressing identity",
 ];
 
 const LoadingScreen = ({ progress }) => {

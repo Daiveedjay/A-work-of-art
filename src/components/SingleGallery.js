@@ -5,17 +5,18 @@ import IconNext from "../media/icon-next-button.svg";
 import ViewImage from "../media/icon-view-image.svg";
 
 import { useLocation, useParams, useNavigate } from "react-router";
-import { useFetch } from "../hooks/useFetch";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+
+import data from "../data.json";
 export default function SingleGallery() {
   const navigate = useNavigate();
   const location = useLocation();
   let { id } = useParams();
-
-  const url = "  http://localhost:3000/assests/" + id;
-  const { data: assest} = useFetch(url);
+  console.log(data.assests);
+  const assest = data.assests.find((x) => x.id === +id);
+  console.log(assest);
 
   const skipFront = () => {
     const nextId = parseInt(id) + 1;
@@ -34,7 +35,7 @@ export default function SingleGallery() {
       navigate(`/assests/${prevId}`);
     }
   };
-  console.log(assest);
+  // console.log(assest);
 
   const containerVariants = {
     hidden: {

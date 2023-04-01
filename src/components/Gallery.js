@@ -2,15 +2,17 @@ import { useState } from "react";
 import "./Gallery.css";
 import Masonry from "react-masonry-css";
 
-import { useFetch } from "../hooks/useFetch";
 import { Link } from "react-router-dom";
+import assests from "../data.json";
 
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Gallery() {
-  const [url] = useState(" http://localhost:3000/assests");
-  const { data } = useFetch(url);
-  console.log(data);
+  const data = assests.assests;
+  // console.log(test);
+  // const [url] = useState("http://localhost:3000/assests");
+  // const { data } = useFetch(url);
+  // console.log(data);
 
   const breakpoints = {
     default: 4,

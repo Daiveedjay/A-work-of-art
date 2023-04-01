@@ -6,9 +6,6 @@ export const useFetch = (url) => {
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState(false);
 
-  // Use useRef to wrap an object/array arguement which is a useEffect dependency
-  // const
-
   useEffect(() => {
     const controller = new AbortController();
     const fetchData = async () => {
